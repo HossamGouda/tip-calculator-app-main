@@ -36,33 +36,33 @@
                     <input class="rates rate3" type="button" value="15%">
                     <input class="rates rate4" type="button" value="25%">
                     <input class="rates rate5" type="button" value="50%">
-                    <input class="rates rate_custom" type="placeholder" placeholder="Custom" id="custom">
+                    <input class="rates rate_custom" type="number" placeholder="Custom" id="custom" >
 
                 </form>
 
 
                 <p class="nop">Number of People</p>
+                <p class="alert">can't be zero</p>
                 <form class="in-form">
-                    <label for="bill" class=""></label>
-                    <input type="number" id="person" name="bill" placeholder="0" />
+                    <label for="person" class=""></label>
+                    <input type="number" id="person" name="person" placeholder="0" min="1"/>
                 </form>
                 <img src="./images/icon-person.svg" alt="" class="char" />
             </div>
             <div class="outputs">
                 <div class="person_amount">
                     <img src="./images/icon-dollar.svg" alt="" class="dollar2" />
-                    <div>0.00</div>
+                    <div class="tip_amount">0.00</div>
                 </div>
                 <p>
-                    Tip Amount <br /> / person
+                    Tip Amount <br /> <span>/ person</span>
                 </p>
                 <div class="total_person">
                     <img src="./images/icon-dollar.svg" alt="" class="dollar3" />
-                    <div>0.00</div>
+                    <div class="per_person">0.00</div>
                 </div>
-                <p class="total">Total <br />/ person <br /></p>
-                <label for="rest"></label>
-                <button class="reset" type="reset">Reset</button>
+                <p class="total">Total <br /> <span>/ person</span> <br /></p>
+                <button class="reset" type="text">Reset</button>
             </div>
         </div>
         <div class="attribution">
@@ -70,6 +70,7 @@
             <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Hossam Gouda</a>.
         </div>
     </main>
+    <script src="main.js" type="text/javascript"></script>
 </body>
 
 </html>
