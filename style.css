@@ -167,7 +167,6 @@ input:hover {
     cursor: pointer;
 }
 
-
 /* Firefox */
 
 input[type="number"] {
@@ -178,9 +177,7 @@ input[type="number"]:focus {
     border: 2px solid hsl(173, 54%, 75%);
 }
 
-form input[type="number"]:focus {
-    border: 2px solid hsl(173, 54%, 75%);
-}
+
 
 #bill {
     width: 100%;
@@ -282,7 +279,7 @@ form input[type="number"]:focus {
 
 .reset:hover {
     cursor: pointer;
-    background-color: var(hsl(173, 61%, 77%));
+    background-color: hsl(173deg 61% 77%) !important;
 }
 
 .container label {
@@ -305,10 +302,6 @@ form input[type="number"]:focus {
     background-color: var(--Strong_cyan--);
 }
 
-.cus {
-    display: none;
-}
-
 .attribution {
     order: 3;
     font-size: 0.8em;
@@ -321,7 +314,7 @@ form input[type="number"]:focus {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 375px) and (max-width: 1080px) {
+@media screen and (min-width: 200px) and (max-width: 1080px) {
     html {
         min-height: 100vh;
     }
